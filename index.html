@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PAPER 1</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('body').scrollspy({
+              target: '#mainNavBar'
+          })
+      });
+    </script>
+  </head>
+
+  <body>
+  	<nav id="mainNavBar" class="navbar navbar-default navbar-fixed-top">
+  	  <div class="container-fluid">
+  	    <div class="navbar-header">
+  	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  	        <span class="sr-only">Toggle navigation</span>
+  	        <span class="icon-bar"></span>
+  	        <span class="icon-bar"></span>
+  	        <span class="icon-bar"></span>
+  	      </button>
+  	      <a class="navbar-brand" href="#">PAPER 1</a>
+  	    </div>
+
+  	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  	      <ul class="nav navbar-nav">
+  	        <li class="active"><a href="#abstract">Abstract <span class="sr-only">(current)</span></a></li>
+  	        <li><a href="#downloads">Downloads</a></li>
+  		      <li><a href="#authors">Authors</a></li>
+  	      </ul>
+  	    </div>
+  	  </div>
+  	</nav>
+
+
+  	<div class="container container-gral">
+
+  		<div class="page-title">
+  			<h1>Analyzing Continuous Integration Bad Practices in Closed-Source Projects: An Initial Study</h1> 
+      </div>
+
+      <span>This website contains complementary data to the submitted paper.</span>
+
+
+  		<h3 id="abstract" class="page-header">Abstract</h3>
+
+  		<p class="text-justify">
+        Continuous integration (CI) is a process widely used in projects of different types and sizes, generally aimed at improving development and also ensuring the quality of the software. However, some bad practices can mitigate or invalidate the beneficial effects of CI. In this context, we present an initial study to analyze CI bad practices in two closed-source projects. The study had as main research questions: (i) the frequency of CI bad practices in projects, (ii) the time that builds failures remain unresolved in projects, and (iii) the effects of CI bad practices on software health from the perspective of developers and project managers. For this, we carried out a mapping of the existence of bad practices through a questionnaire directed to the projects team. Also, it was realized the analysis of the pipeline history of the projects. Our findings indicate that the most common CI bad practices are related to improper management of the CI repository, and defective builds usually take a long time to fix. Besides, we found that the difficulties resulting from CI bad practices promote an increase in the development cost and reduction of software quality assurance.
+  		</p>
+  			
+
+  		<h3 id="downloads" class="page-header">Downloads</h3>
+
+  		<table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Artefact</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td> <a href="download/Bad practices occurrences.pdf" download="Bad practices occurrences.pdf" target="_blank"> Bad practices occurrences </a></td>
+            <td> Information compiled on the occurrence of bad practices in the analyzed systems </td>    
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td> <a href="download/Ordered bad practices occurences.pdf" download="Ordered bad practices occurences.pdf" target="_blank"> Ordered bad practices occurences </a></td>
+            <td> Information sorted by the number of occurrences of bad practices in the analyzed systems </td>    
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td> <a href="download/Broken build-fix intervals - summary.csv" download="Broken build-fix intervals - summary.csv" target="_blank"> Broken build-fix intervals - summary </a></td>
+            <td> Longer, shorter and average lengths of broken builds correction intervals in analyzed systems </td>    
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td> <a href="download/Broken build-fix intervals.csv" download="Broken build-fix intervals.csv" target="_blank"> Broken build-fix intervals </a></td>
+            <td> Listing the durations of all broken buildd correction intervals in the analyzed systems </td>    
+          </tr>
+          <tr>
+            <th>5</th>
+            <td> <a href="download/Form - Bad practices of continuous integration.pdf" download="Form - Bad practices of continuous integration.pdf" target="_blank"> Form - Bad practices of continuous integration </a></td>
+            <td> Form to capture the perception of team members about the existence of bad IC practices in projects </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td> <a href="download/Form answers.csv" download="Form answers.csv" target="_blank"> Form answers </a></td>
+            <td> Form responses on the existence of bad practices in the analyzed systems </td>    
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td> <a href="download/Pipeline API Tool.zip" download="Pipeline API Tool.zip" target="_blank"> Pipeline API Tool </a></td>
+            <td> Tool developed to perform the identification and analysis of broken builds correction intervals </td>    
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h3 class="page-header" id="authors">Authors</h3>
+
+      <p>Any question/suggestion please contact the authors of this work.</p>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>E-mail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Anonymous Authors</td>
+            <td>anonymous@email.com</td>
+          </tr>
+        </tbody>
+      </table>
+  	</div>
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-103030276-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
